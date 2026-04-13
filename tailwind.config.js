@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "secondary-container": "#d5e0f7",
+        "primary-fixed-dim": "#a5d0b9",
+        "on-secondary-fixed": "#111c2c",
+        "tertiary-container": "#5e3000",
+        "on-surface": "#181c1e",
+        "outline-variant": "#c1c8c2",
+        "surface-container-high": "#e5e9eb",
+        "on-background": "#181c1e",
+        "surface-dim": "#d7dadc",
+        "tertiary-fixed-dim": "#ffb77d",
+        "primary": "#012d1d",
+        "on-tertiary": "#ffffff",
+        "surface-container-low": "#f1f4f6",
+        "primary-fixed": "#c1ecd4",
+        "on-surface-variant": "#414844",
+        "surface-bright": "#f7fafc",
+        "on-secondary-container": "#586377",
+        "inverse-primary": "#a5d0b9",
+        "error-container": "#ffdad6",
+        "surface-container": "#ebeef0",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed-variant": "#6e3900",
+        "on-primary-fixed": "#002114",
+        "on-tertiary-fixed": "#2f1500",
+        "on-secondary-fixed-variant": "#3c475a",
+        "tertiary": "#3e1e00",
+        "surface-tint": "#3f6653",
+        "surface-container-highest": "#e0e3e5",
+        "on-primary-container": "#86af99",
+        "tertiary-fixed": "#ffdcc3",
+        "secondary-fixed-dim": "#bcc7dd",
+        "primary-container": "#1b4332",
+        "background": "#f7fafc",
+        "outline": "#717973",
+        "surface": "#f7fafc",
+        "on-error-container": "#93000a",
+        "secondary-fixed": "#d8e3fa",
+        "secondary": "#545f72",
+        "surface-variant": "#e0e3e5",
+        "inverse-surface": "#2d3133",
+        "on-primary": "#ffffff",
+        "on-tertiary-container": "#fa8900",
+        "on-primary-fixed-variant": "#274e3d",
+        "error": "#ba1a1a",
+        "surface-container-lowest": "#ffffff",
+        "on-error": "#ffffff",
+        "inverse-on-surface": "#eef1f3"
+      },
+      borderRadius: {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      fontFamily: {
+        "headline": ["var(--font-manrope)"],
+        "body": ["var(--font-inter)"],
+        "label": ["var(--font-inter)"]
+      }
+    },
+  },
+  plugins: [],
+}

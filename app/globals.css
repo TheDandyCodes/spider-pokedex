@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+  .editorial-shadow {
+    box-shadow: 0 20px 40px rgba(24, 28, 30, 0.06);
+  }
+  .glass-header {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .organic-gradient {
+    background: linear-gradient(135deg, #012d1d 0%, #1b4332 100%);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .spider-card:nth-child(even),
+  a:nth-child(even) > .spider-card {
+    margin-top: 1.5rem;
+  }
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}
